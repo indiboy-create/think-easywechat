@@ -1,0 +1,51 @@
+{
+    "name": "youvision/think-easywechat",
+    "description": "EasyWeChat integration for ThinkPHP 8.",
+    "keywords": [
+        "thinkphp",
+        "easywechat",
+        "wechat",
+        "weixin",
+        "sdk"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "youvision"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.2",
+        "topthink/framework": "^8.0",
+        "w7corp/easywechat": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youvision\\ThinkEasyWeChat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Youvision\\ThinkEasyWeChat\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Youvision\\ThinkEasyWeChat\\Service"
+            ],
+            "config": {
+                "easywechat": "config/easywechat.php"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
